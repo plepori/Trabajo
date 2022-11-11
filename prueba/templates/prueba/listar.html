@@ -1,0 +1,20 @@
+
+{% extends 'prueba/base.html' %}
+{% block titulo%} Modificar un Familiar {% endblock %}
+{% block contenido %}
+
+<!-- Prestar aatención a la variable -->
+<body>
+    Lista de Familiares:<br>
+    {% for f in fam %}
+        <ul>
+            <li>
+                Nombre:{{f.nombre}}, Direccion: {{f.direccion}}, DNI: {{f.dni}}
+            </li>
+        </ul>
+    {% endfor %}
+
+</body>
+</html>
+
+{% endblock %}
